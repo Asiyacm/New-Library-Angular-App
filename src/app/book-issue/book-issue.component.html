@@ -1,0 +1,48 @@
+<app-navigation></app-navigation>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <div class="row g-3">
+
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+
+                </div>
+        
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Book Title</label>
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
+
+                </div>
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Date Of Issue</label>
+                   <input name="dateofissue" [(ngModel)]="dateofissue" type="date" name="" id="" class="form-control">
+
+                </div>
+
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Membership Number</label>
+                    <input name="membershipno" [(ngModel)]="membershipno" type="text" class="form-control">
+
+                </div>
+            
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="bookIssue()" class="btn btn-info">Submit</button>
+                </div>
+
+            </div>
+        
+        
+        
+        </div>
+    </div>
+</div>
