@@ -34,7 +34,26 @@ export class BookSearchComponent {
    )
 
 }
+
+
+   deleteBtnClick=(id:any)=>{
+
+  let data:any={"id":id}
+  this.api.deleteBook(data).subscribe(
+    (response:any)=>{
+      console.log(response)
+      if(response.status=="success")
+      {
+        alert("Deleted Successfully")
+        this.SearchData=[]
+      }
+      
+  }
+)
+
 }
+}
+
 
 
 
