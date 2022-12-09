@@ -24,11 +24,11 @@ export class BookSearchComponent {
 
       console.log(response)
       if (response.length==0) {
-        alert("Invalid patient name")
+        alert("Invalid book name")
         
       } else {
         this.SearchData=response
-      
+        
       }
     }
    )
