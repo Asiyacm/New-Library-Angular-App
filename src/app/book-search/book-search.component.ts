@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-book-search',
@@ -9,12 +10,31 @@ export class BookSearchComponent {
 
   title=""
 
-
-  bookSearch=()=>
+  constructor(private api:ApiService){}
+ SearchData:any=[]
+  readValue=()=>
 {
-  let searchBook:any=
+  let data:any=
   {"title":this.title}
-  console.log(searchBook)
-}
+  console.log(data)
+
+  this.api.searchBook(data).subscribe(
+
+    (response:any)=>{
+
+      console.log(response)
+      if (response.length==0) {
+        alert("Invalid patient name")
+        
+      } else {
+        this.SearchData=response
+      
+      }
+    }
+   )
 
 }
+}
+
+
+

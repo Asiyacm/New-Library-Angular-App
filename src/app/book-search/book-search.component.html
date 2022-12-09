@@ -14,13 +14,80 @@
                 </div>
             
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button (click)="bookSearch()" class="btn btn-info">Search</button>
+                    <button (click)="readValue()" class="btn btn-info">Search</button>
                 </div>
 
             </div>
+
+
+
         
         
+                    <div class="row g-3" *ngFor="let i of SearchData">
         
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        
+                            <label for="" class="form-label">Author</label>
+                            <input type="text" class="form-control" value="{{i.author}}">
+        
+                        </div>
+        
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        
+                            <label for="" class="form-label">Description</label>
+                            <textarea id="" cols="30" rows="10" class="form-control" value="{{i.description}}"></textarea>
+        
+                        </div>
+        
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        
+                            <label for="" class="form-label">Publisher</label>
+                            <input type="text" class="form-control" value="{{i.publisher}}">
+        
+                        </div>
+        
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        
+                            <label for="" class="form-label">Language</label>
+                            <input type="text" class="form-control" value="{{i.language}}">
+        
+                        </div>
+        
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        
+                            <label for="" class="form-label">Distributor</label>
+                            <input type="text" class="form-control" value="{{i.distributor}}">
+        
+                        </div>
+        
+        
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        
+                            <label for="" class="form-label">Released Year</label>
+                            <input type="text" class="form-control" value="{{i.releasedyear}}">
+        
+                        </div>
+        
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        
+                            <label for="" class="form-label">Price</label>
+                            <input  type="text" class="form-control" value="{{i.price}}">
+        
+                        </div>
+        
+                        
+        
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        
+                            <label for="" class="form-label">Book Image</label>
+                            <input  type="file" name="" id="" class="form-control" value="{{i.bookimage}}">
+        
+                        </div>
+                
+                
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+        
+        
+        
