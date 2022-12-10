@@ -28,4 +28,14 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/delete",dataToSend3)
   }
+
+  userSignup=(dataToSend4:any)=>
+  {
+    return this.http.post("http://localhost:8080/usersignup",dataToSend4)
+  }
+
+  userView=()=>
+  {
+    return this.http.get("http://localhost:8080/userview")
+  }
 }
