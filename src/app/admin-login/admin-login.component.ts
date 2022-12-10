@@ -19,7 +19,7 @@ export class AdminLoginComponent {
     {"username":this.username,"password":this.password}
        console.log(admin)
        
-       if (this.username=="admin" && this.password=="password") {
+       if (this.username=="admin" && this.password=="12345") {
         this.route.navigate(['/entry'])
         
        } else {
