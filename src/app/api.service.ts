@@ -38,4 +38,15 @@ export class ApiService {
   {
     return this.http.get("http://localhost:8080/userview")
   }
+
+  searchUser=(dataToSend5:any)=>
+  {
+    return this.http.post("http://localhost:8080/usersearch",dataToSend5)
+  }
+
+  deleteUser=(dataToSend6:any)=>
+  {
+    return this.http.post("http://localhost:8080/userdelete",dataToSend6)
+  }
+
 }
