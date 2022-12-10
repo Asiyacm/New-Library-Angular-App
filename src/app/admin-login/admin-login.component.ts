@@ -10,6 +10,7 @@ export class AdminLoginComponent {
 
   username=""
   password=""
+  
   constructor(private route:Router){}
 
   adminLogin=()=>
@@ -17,14 +18,14 @@ export class AdminLoginComponent {
     let admin:any=
     {"username":this.username,"password":this.password}
        console.log(admin)
-       if (this.username=="admin" && this.password=="12345") {
+       
+       if (this.username=="admin" && this.password=="password") {
         this.route.navigate(['/entry'])
-         
+        
        } else {
-         alert("Invalid credential")
-         
+        alert("Invalid credential")
+        
        }
-  
 
 }
 }

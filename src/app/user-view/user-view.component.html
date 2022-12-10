@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">AADHAR NUMBER</th>
+        <th scope="col">ADDRESS</th>
+        <th scope="col">PINCODE</th>
+        <th scope="col">DATE OF BIRTH</th>
+        <th scope="col">EMAIL ID</th>
+        <th scope="col">PHONE NUMBER</th>
+        <th scope="col">USERNAME</th>
+        <th scope="col">PASSWORD</th>
+        <th scope="col">CONFIRM PASSWORD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let j of user">
+        <th scope="row">{{j.id}}</th>
+        <td>{{j.name}}</td>
+        <td>{{j.aadharno}}</td>
+        <td>{{j.adress}}</td>
+        <td>{{j.pincode}}</td>
+        <td>{{j.dateofbirth}}</td>
+        <td>{{j.emailid}}</td>
+        <td>{{j.phoneno}}</td>
+        <td>{{j.username}}</td>
+        <td>{{j.password}}</td>
+        <td>{{j.confirmpassword}}</td>
+      </tr>
+    </tbody>
+  </table>

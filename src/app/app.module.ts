@@ -15,6 +15,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookIssueComponent } from './book-issue/book-issue.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserViewComponent } from './user-view/user-view.component';
 
 
 const myRoute:Routes=[
@@ -53,7 +54,12 @@ const myRoute:Routes=[
   {
     path:"issue",
     component:BookIssueComponent
+  },
+  {
+    path:"userview",
+    component:UserViewComponent
   }
+  
   
     
      
@@ -73,7 +79,8 @@ const myRoute:Routes=[
     BookSearchComponent,
     BookEditComponent,
     BookIssueComponent,
-    NavigationComponent
+    NavigationComponent,
+    UserViewComponent
   ],
   imports: [
     BrowserModule,
