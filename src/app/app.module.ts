@@ -17,6 +17,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserViewComponent } from './user-view/user-view.component';
 import { UserSearchComponent } from './user-search/user-search.component';
+import { UsernavComponent } from './usernav/usernav.component';
 
 
 const myRoute:Routes=[
@@ -86,7 +87,8 @@ const myRoute:Routes=[
     BookIssueComponent,
     NavigationComponent,
     UserViewComponent,
-    UserSearchComponent
+    UserSearchComponent,
+    UsernavComponent
   ],
   imports: [
     BrowserModule,
